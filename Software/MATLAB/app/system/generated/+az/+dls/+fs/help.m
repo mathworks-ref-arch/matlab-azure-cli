@@ -1,0 +1,26 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az dls fs : Manage a Data Lake Store filesystem.')
+    fprintf('%s\n', '        Command group ''dls'' is in preview. It may be changed/removed in a future release.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    access        : Manage Data Lake Store filesystem access and permissions.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    append        : Append content to a file in a Data Lake Store account.')
+    fprintf('%s\n', '    create        : Creates a file or folder in a Data Lake Store account.')
+    fprintf('%s\n', '    delete        : Delete a file or folder in a Data Lake Store account.')
+    fprintf('%s\n', '    download      : Download a file or folder from a Data Lake Store account to the local machine.')
+    fprintf('%s\n', '    join          : Join files in a Data Lake Store account into one file.')
+    fprintf('%s\n', '    list          : List the files and folders in a Data Lake Store account.')
+    fprintf('%s\n', '    move          : Move a file or folder in a Data Lake Store account.')
+    fprintf('%s\n', '    preview       : Preview the content of a file in a Data Lake Store account.')
+    fprintf('%s\n', '    remove-expiry : Remove the expiration time for a file.')
+    fprintf('%s\n', '    set-expiry    : Set the expiration time for a file.')
+    fprintf('%s\n', '    show          : Get file or folder information in a Data Lake Store account.')
+    fprintf('%s\n', '    test          : Test for the existence of a file or folder in a Data Lake Store account.')
+    fprintf('%s\n', '    upload        : Upload a file or folder to a Data Lake Store account.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az dls fs"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

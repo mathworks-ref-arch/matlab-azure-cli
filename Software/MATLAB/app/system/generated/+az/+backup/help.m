@@ -1,0 +1,27 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az backup : Manage Azure Backups.')
+    fprintf('%s\n', '        This command group is in preview. It may be changed/removed in a future release.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    container        : Resource which houses items or applications to be protected.')
+    fprintf('%s\n', '    item             : An item which is already protected or backed up to an Azure Recovery services')
+    fprintf('%s\n', '                       vault with an associated policy.')
+    fprintf('%s\n', '    job              : Entity which contains details of the job.')
+    fprintf('%s\n', '    policy           : A backup policy defines when you want to take a backup and for how long you')
+    fprintf('%s\n', '                       would retain each backup copy.')
+    fprintf('%s\n', '    protectable-item : Manage the item which is yet to be protected or backed up to an Azure')
+    fprintf('%s\n', '                       Recovery services vault with an associated policy.')
+    fprintf('%s\n', '    protection       : Manage protection of your items, enable protection or disable it, or take on-')
+    fprintf('%s\n', '                       demand backups.')
+    fprintf('%s\n', '    recoveryconfig   : Manage recovery configuration of an Azure workload backed up item.')
+    fprintf('%s\n', '    recoverypoint    : A snapshot of data at that point-of-time, stored in Recovery Services Vault,')
+    fprintf('%s\n', '                       from which you can restore information.')
+    fprintf('%s\n', '    restore          : Restore backed up items from recovery points in a Recovery Services vault.')
+    fprintf('%s\n', '    vault            : Online storage entity in Azure used to hold data such as backup copies,')
+    fprintf('%s\n', '                       recovery points and backup policies.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az backup"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

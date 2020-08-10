@@ -1,0 +1,26 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az servicebus georecovery-alias : Manage Azure Service Bus Geo-Disaster Recovery Configuration')
+    fprintf('%s\n', '    Alias.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    authorization-rule : Manage Azure Service Bus Authorization Rule for Namespace with Geo-Disaster')
+    fprintf('%s\n', '                         Recovery Configuration Alias.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    break-pair         : Disables Service Bus Geo-Disaster Recovery Configuration Alias and stops')
+    fprintf('%s\n', '                         replicating changes from primary to secondary namespaces.')
+    fprintf('%s\n', '    delete             : Deletes Service Bus Geo-Disaster Recovery Configuration Alias request')
+    fprintf('%s\n', '                         accepted.')
+    fprintf('%s\n', '    exists             : Check if Geo Recovery Alias Name is available.')
+    fprintf('%s\n', '    fail-over          : Invokes Service Bus Geo-Disaster Recovery Configuration Alias failover and')
+    fprintf('%s\n', '                         re-configure the alias to point to the secondary namespace.')
+    fprintf('%s\n', '    list               : Gets all Alias(Disaster Recovery configurations).')
+    fprintf('%s\n', '    set                : Sets Service Bus Geo-Disaster Recovery Configuration Alias for the give')
+    fprintf('%s\n', '                         Namespace.')
+    fprintf('%s\n', '    show               : Shows properties of Service Bus Geo-Disaster Recovery Configuration Alias')
+    fprintf('%s\n', '                         for Primay/Secondary Namespace.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az servicebus georecovery-alias"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

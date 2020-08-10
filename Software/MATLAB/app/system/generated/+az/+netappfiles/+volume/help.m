@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az netappfiles volume : Manage Azure NetApp Files (ANF) Volume Resources.')
+    fprintf('%s\n', '        Command group ''netappfiles'' is in preview. It may be changed/removed in a future')
+    fprintf('%s\n', '        release.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    export-policy : Manage Azure NetApp Files (ANF) Volume export policies.')
+    fprintf('%s\n', '    replication   : Manage Azure NetApp Files (ANF) Volume replication operations.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    create        : Create a new Azure NetApp Files (ANF) volume. Export policies are applied with')
+    fprintf('%s\n', '                    the subgroup commands but note that volumes are always created with a default')
+    fprintf('%s\n', '                    export policy.')
+    fprintf('%s\n', '    delete        : Delete the specified ANF volume.')
+    fprintf('%s\n', '    list          : List the ANF Pools for the specified account.')
+    fprintf('%s\n', '    revert        : Revert a volume to one of its snapshots.')
+    fprintf('%s\n', '    show          : Get the specified ANF volume.')
+    fprintf('%s\n', '    update        : Update the specified ANF volume with the values provided. Unspecified values')
+    fprintf('%s\n', '                    will remain unchanged. Export policies are amended/created with the subgroup')
+    fprintf('%s\n', '                    commands.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az netappfiles volume"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

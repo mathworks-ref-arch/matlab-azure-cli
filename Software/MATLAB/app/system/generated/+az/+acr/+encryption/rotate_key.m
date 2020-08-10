@@ -1,0 +1,91 @@
+classdef rotate_key < azure.AzureBase
+
+    % Copyright 2020, The MathWorks Inc.
+
+    methods
+        function this = rotate_key()
+            % az acr encryption rotate-key : Rotate (update) the container registry's encryption key.
+            % For more information, see http://aka.ms/acr/cmk.
+            this.BaseCmd = 'az acr encryption rotate-key ';
+        end
+        function this = name(this, varargin)
+            % The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
+            this.Options = [this.Options, '--name', varargin{:}];
+        end
+
+        function this = identity(this, varargin)
+            % Client id of managed identity, resource name or id of user assigned identity. Use '[system]' to refer to the system assigned identity.
+            this.Options = [this.Options, '--identity', varargin{:}];
+        end
+
+        function this = key_encryption_key(this, varargin)
+            % Key vault key uri.
+            this.Options = [this.Options, '--key-encryption-key', varargin{:}];
+        end
+
+        function this = resource_group(this, varargin)
+            % Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+            this.Options = [this.Options, '--resource-group', varargin{:}];
+        end
+
+        function this = debug(this, varargin)
+            % Increase logging verbosity to show all debug logs.
+            this.Options = [this.Options, '--debug', varargin{:}];
+        end
+
+        function this = only_show_errors(this, varargin)
+            % Only show errors, suppressing warnings.
+            this.Options = [this.Options, '--only-show-errors', varargin{:}];
+        end
+
+        function this = output(this, varargin)
+            % Output format.  Allowed values: json, jsonc, none, table, tsv, yaml, yamlc.  Default: json.
+            this.Options = [this.Options, '--output', varargin{:}];
+        end
+
+        function this = query(this, varargin)
+            % JMESPath query string. See http://jmespath.org/ for more information and examples.
+            this.Options = [this.Options, '--query', varargin{:}];
+        end
+
+        function this = subscription(this, varargin)
+            % Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+            this.Options = [this.Options, '--subscription', varargin{:}];
+        end
+
+        function this = verbose(this, varargin)
+            % Increase logging verbosity. Use --debug for full debug logs. For more specific examples, use: az find "az acr encryption rotate-key"
+            this.Options = [this.Options, '--verbose', varargin{:}];
+        end
+
+    end
+    methods (Static = true)
+        function help(~)
+
+            fprintf('%s\n', 'Command')
+            fprintf('%s\n', '    az acr encryption rotate-key : Rotate (update) the container registry''s encryption key.')
+            fprintf('%s\n', '        For more information, see http://aka.ms/acr/cmk.')
+            fprintf('%s\n', 'Arguments')
+            fprintf('%s\n', '    --name -n [Required] : The name of the container registry. You can configure the default')
+            fprintf('%s\n', '                           registry name using `az configure --defaults acr=<registry name>`.')
+            fprintf('%s\n', '    --identity           : Client id of managed identity, resource name or id of user assigned')
+            fprintf('%s\n', '                           identity. Use ''[system]'' to refer to the system assigned identity.')
+            fprintf('%s\n', '    --key-encryption-key : Key vault key uri.')
+            fprintf('%s\n', '    --resource-group -g  : Name of resource group. You can configure the default group using `az')
+            fprintf('%s\n', '                           configure --defaults group=<name>`.')
+            fprintf('%s\n', 'Global Arguments')
+            fprintf('%s\n', '    --debug              : Increase logging verbosity to show all debug logs.')
+            fprintf('%s\n', '    --help -h            : Show this help message and exit.')
+            fprintf('%s\n', '    --only-show-errors   : Only show errors, suppressing warnings.')
+            fprintf('%s\n', '    --output -o          : Output format.  Allowed values: json, jsonc, none, table, tsv, yaml,')
+            fprintf('%s\n', '                           yamlc.  Default: json.')
+            fprintf('%s\n', '    --query              : JMESPath query string. See http://jmespath.org/ for more information and')
+            fprintf('%s\n', '                           examples.')
+            fprintf('%s\n', '    --subscription       : Name or ID of subscription. You can configure the default subscription')
+            fprintf('%s\n', '                           using `az account set -s NAME_OR_ID`.')
+            fprintf('%s\n', '    --verbose            : Increase logging verbosity. Use --debug for full debug logs.')
+            fprintf('%s\n', 'For more specific examples, use: az find "az acr encryption rotate-key"')
+            fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+        end
+    end
+end % End of class rotate_key 

@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az network lb : Manage and configure load balancers.')
+    fprintf('%s\n', '        To learn more about Azure Load Balancer visit https://docs.microsoft.com/azure/load-')
+    fprintf('%s\n', '        balancer/load-balancer-get-started-internet-arm-cli.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    address-pool     : Manage address pools of a load balancer.')
+    fprintf('%s\n', '    frontend-ip      : Manage frontend IP addresses of a load balancer.')
+    fprintf('%s\n', '    inbound-nat-pool : Manage inbound NAT address pools of a load balancer.')
+    fprintf('%s\n', '    inbound-nat-rule : Manage inbound NAT rules of a load balancer.')
+    fprintf('%s\n', '    outbound-rule    : Manage outbound rules of a load balancer.')
+    fprintf('%s\n', '    probe            : Evaluate probe information and define routing rules.')
+    fprintf('%s\n', '    rule             : Manage load balancing rules.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    create           : Create a load balancer.')
+    fprintf('%s\n', '    delete           : Delete a load balancer.')
+    fprintf('%s\n', '    list             : List load balancers.')
+    fprintf('%s\n', '    show             : Get the details of a load balancer.')
+    fprintf('%s\n', '    update           : Update a load balancer.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az network lb"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

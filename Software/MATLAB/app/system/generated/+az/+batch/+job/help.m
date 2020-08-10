@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az batch job : Manage Batch jobs.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    all-statistics      : View statistics of all jobs under a Batch account.')
+    fprintf('%s\n', '    prep-release-status : View the status of Batch job preparation and release tasks.')
+    fprintf('%s\n', '    task-counts         : View the number of tasks in a Batch job and their states.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    create              : Add a job to a Batch account.')
+    fprintf('%s\n', '    delete              : Deletes a Job.')
+    fprintf('%s\n', '    disable             : Disables the specified Job, preventing new Tasks from running.')
+    fprintf('%s\n', '    enable              : Enables the specified Job, allowing new Tasks to run.')
+    fprintf('%s\n', '    list                : List all of the jobs or job schedule in a Batch account.')
+    fprintf('%s\n', '    reset               : Update the properties of a Batch job. Unspecified properties which can be')
+    fprintf('%s\n', '                          updated are reset to their defaults.')
+    fprintf('%s\n', '    set                 : Update the properties of a Batch job. Updating a property in a subgroup')
+    fprintf('%s\n', '                          will reset the unspecified properties of that group.')
+    fprintf('%s\n', '    show                : Gets information about the specified Job.')
+    fprintf('%s\n', '    stop                : Terminates the specified Job, marking it as completed.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az batch job"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

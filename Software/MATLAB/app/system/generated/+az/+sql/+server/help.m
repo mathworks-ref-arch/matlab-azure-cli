@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az sql server : Manage SQL servers.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    ad-admin      : Manage a server''s Active Directory administrator.')
+    fprintf('%s\n', '    conn-policy   : Manage a server''s connection policy.')
+    fprintf('%s\n', '    dns-alias     : Manage a server''s DNS aliases.')
+    fprintf('%s\n', '    firewall-rule : Manage a server''s firewall rules.')
+    fprintf('%s\n', '    key           : Manage a server''s keys.')
+    fprintf('%s\n', '    tde-key       : Manage a server''s encryption protector.')
+    fprintf('%s\n', '    vnet-rule     : Manage a server''s virtual network rules.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    create        : Create a server.')
+    fprintf('%s\n', '    delete        : Deletes a server.')
+    fprintf('%s\n', '    list          : List available servers.')
+    fprintf('%s\n', '    list-usages   : Returns server usages.')
+    fprintf('%s\n', '    show          : Gets a server.')
+    fprintf('%s\n', '    update        : Update a server.')
+    fprintf('%s\n', '    wait          : Place the CLI in a waiting state until a condition of the SQL server is met.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az sql server"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

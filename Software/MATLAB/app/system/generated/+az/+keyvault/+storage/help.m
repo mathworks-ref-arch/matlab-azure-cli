@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az keyvault storage : Manage storage accounts.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    sas-definition : Manage storage account SAS definitions.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    add            : Creates or updates a new storage account.')
+    fprintf('%s\n', '    backup         : Backs up the specified storage account.')
+    fprintf('%s\n', '    list           : List storage accounts managed by the specified key vault.')
+    fprintf('%s\n', '    list-deleted   : Lists deleted storage accounts for the specified vault.')
+    fprintf('%s\n', '    purge          : Permanently deletes the specified storage account.')
+    fprintf('%s\n', '    recover        : Recovers the deleted storage account.')
+    fprintf('%s\n', '    regenerate-key : Regenerates the specified key value for the given storage account.')
+    fprintf('%s\n', '    remove         : Remove a Key Vault managed Azure Storage Account and all associated SAS')
+    fprintf('%s\n', '                     definitions. This operation requires the storage/delete permission.')
+    fprintf('%s\n', '    restore        : Restores a backed up storage account to a vault.')
+    fprintf('%s\n', '    show           : Gets information about a specified storage account.')
+    fprintf('%s\n', '    show-deleted   : Gets the specified deleted storage account.')
+    fprintf('%s\n', '    update         : Updates the specified attributes associated with the given storage account.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az keyvault storage"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

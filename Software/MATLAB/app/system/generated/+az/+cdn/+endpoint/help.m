@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az cdn endpoint : Manage CDN endpoints.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    rule         [Preview] : Manage delivery rules for an endpoint.')
+    fprintf('%s\n', '    waf                    : Manage WAF properties of a CDN endpoint.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    create                 : Create a named endpoint to connect to a CDN.')
+    fprintf('%s\n', '    delete                 : Delete a CDN endpoint.')
+    fprintf('%s\n', '    list                   : List available endpoints for a CDN.')
+    fprintf('%s\n', '    load                   : Pre-load content for a CDN endpoint.')
+    fprintf('%s\n', '    purge                  : Purge pre-loaded content for a CDN endpoint.')
+    fprintf('%s\n', '    show                   : Gets an existing CDN endpoint with the specified endpoint name under')
+    fprintf('%s\n', '                             the specified subscription, resource group and profile.')
+    fprintf('%s\n', '    start                  : Start a CDN endpoint.')
+    fprintf('%s\n', '    stop                   : Stop a CDN endpoint.')
+    fprintf('%s\n', '    update                 : Update a CDN endpoint to manage how content is delivered.')
+    fprintf('%s\n', '    validate-custom-domain : Validates the custom domain mapping to ensure it maps to the correct')
+    fprintf('%s\n', '                             CDN endpoint in DNS.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az cdn endpoint"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

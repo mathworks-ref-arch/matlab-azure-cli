@@ -1,0 +1,25 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az webapp config : Configure a web app.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    access-restriction [Preview] : Methods that show, set, add, and remove access')
+    fprintf('%s\n', '                                   restrictions on a webapp.')
+    fprintf('%s\n', '    appsettings                  : Configure web app settings. Updating or removing application')
+    fprintf('%s\n', '                                   settings will cause an app recycle.')
+    fprintf('%s\n', '    backup                       : Manage backups for web apps.')
+    fprintf('%s\n', '    connection-string            : Manage a web app''s connection strings.')
+    fprintf('%s\n', '    container                    : Manage web app container settings.')
+    fprintf('%s\n', '    hostname                     : Configure hostnames for a web app.')
+    fprintf('%s\n', '    snapshot                     : Manage web app snapshots.')
+    fprintf('%s\n', '    ssl                          : Configure SSL certificates for web apps.')
+    fprintf('%s\n', '    storage-account              : Manage a web app''s Azure storage account configurations. (Linux')
+    fprintf('%s\n', '                                   Web Apps and Windows Containers Web Apps Only).')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    set                          : Set a web app''s configuration.')
+    fprintf('%s\n', '    show                         : Get the details of a web app''s configuration.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az webapp config"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end

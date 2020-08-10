@@ -1,0 +1,26 @@
+function help()
+
+    % Copyright 2020, The MathWorks Inc.
+
+    fprintf('%s\n', 'Group')
+    fprintf('%s\n', '    az batch pool : Manage Batch pools.')
+    fprintf('%s\n', 'Subgroups:')
+    fprintf('%s\n', '    all-statistics   : View statistics of all pools under a Batch account.')
+    fprintf('%s\n', '    autoscale        : Manage automatic scaling of Batch pools.')
+    fprintf('%s\n', '    node-counts      : Get node counts for Batch pools.')
+    fprintf('%s\n', '    supported-images : Query information on VM images supported by Azure Batch service.')
+    fprintf('%s\n', '    usage-metrics    : View usage metrics of Batch pools.')
+    fprintf('%s\n', 'Commands:')
+    fprintf('%s\n', '    create           : Create a Batch pool in an account. When creating a pool, choose arguments')
+    fprintf('%s\n', '                       from either Cloud Services Configuration or Virtual Machine Configuration.')
+    fprintf('%s\n', '    delete           : Deletes a Pool from the specified Account.')
+    fprintf('%s\n', '    list             : Lists all of the Pools in the specified Account.')
+    fprintf('%s\n', '    reset            : Update the properties of a Batch pool. Unspecified properties which can be')
+    fprintf('%s\n', '                       updated are reset to their defaults.')
+    fprintf('%s\n', '    resize           : Resize or stop resizing a Batch pool.')
+    fprintf('%s\n', '    set              : Update the properties of a Batch pool. Updating a property in a subgroup will')
+    fprintf('%s\n', '                       reset the unspecified properties of that group.')
+    fprintf('%s\n', '    show             : Gets information about the specified Pool.')
+    fprintf('%s\n', 'For more specific examples, use: az find "az batch pool"')
+    fprintf('%s\n', 'Please let us know how we are doing: https://aka.ms/azureclihats')
+end
