@@ -2,7 +2,7 @@
 
 ## Requirements
 
-### MathWorks Products (http://www.mathworks.com)
+### MathWorks Products (https://www.mathworks.com)
 
 Requires MATLAB R2016a or later.
 
